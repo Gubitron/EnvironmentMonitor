@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "EnvironmentMonitor.Windows": {
+      "commandName": "MsixPackage"
+    }
+  }
+}
