@@ -1,11 +1,453 @@
 {
   "version": 3,
   "targets": {
-    ".NETFramework,Version=v4.7": {}
+    ".NETFramework,Version=v4.7": {
+      "Microsoft.CodeCoverage/16.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {}
+        },
+        "build": {
+          "build/netstandard1.0/Microsoft.CodeCoverage.props": {},
+          "build/netstandard1.0/Microsoft.CodeCoverage.targets": {}
+        }
+      },
+      "Microsoft.NET.Test.Sdk/16.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeCoverage": "16.1.1"
+        },
+        "build": {
+          "build/net40/Microsoft.NET.Test.Sdk.props": {},
+          "build/net40/Microsoft.NET.Test.Sdk.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Microsoft.NET.Test.Sdk.props": {}
+        }
+      },
+      "Mono.Cecil/0.9.6": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Mono.Cecil.Mdb.dll": {},
+          "lib/net45/Mono.Cecil.Pdb.dll": {},
+          "lib/net45/Mono.Cecil.Rocks.dll": {},
+          "lib/net45/Mono.Cecil.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Mono.Cecil.Mdb.dll": {},
+          "lib/net45/Mono.Cecil.Pdb.dll": {},
+          "lib/net45/Mono.Cecil.Rocks.dll": {},
+          "lib/net45/Mono.Cecil.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "NUnit/3.13.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/nunit.framework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/nunit.framework.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/NUnit.props": {}
+        }
+      },
+      "NUnit3TestAdapter/3.0.10": {
+        "type": "package",
+        "compile": {
+          "lib/Mono.Cecil.dll": {},
+          "lib/NUnit3.TestAdapter.dll": {},
+          "lib/nunit.engine.api.dll": {},
+          "lib/nunit.engine.dll": {}
+        },
+        "runtime": {
+          "lib/Mono.Cecil.dll": {},
+          "lib/NUnit3.TestAdapter.dll": {},
+          "lib/nunit.engine.api.dll": {},
+          "lib/nunit.engine.dll": {}
+        }
+      },
+      "Selenium.WebDriver/3.141.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Drawing"
+        ],
+        "compile": {
+          "lib/net45/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/WebDriver.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Uno.UITest/1.1.0-dev.11": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Uno.UITest.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Uno.UITest.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "Uno.UITest.Helpers/1.1.0-dev.11": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NET.Test.Sdk": "16.1.1",
+          "NUnit": "3.12.0",
+          "Newtonsoft.Json": "12.0.2",
+          "Uno.UITest": "1.1.0-dev.11",
+          "Uno.UITest.Selenium": "1.1.0-dev.11",
+          "Uno.UITest.Xamarin": "1.1.0-dev.11"
+        },
+        "compile": {
+          "lib/net47/Uno.UITest.Helpers.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net47/Uno.UITest.Helpers.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "Uno.UITest.Selenium/1.1.0-dev.11": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "3.141.0",
+          "Uno.UITest": "1.1.0-dev.11"
+        },
+        "compile": {
+          "lib/net47/Uno.UITest.Selenium.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net47/Uno.UITest.Selenium.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "Uno.UITest.Xamarin/1.1.0-dev.11": {
+        "type": "package",
+        "dependencies": {
+          "Uno.UITest": "1.1.0-dev.11",
+          "Xamarin.UITest": "3.0.12",
+          "mono.cecil": "0.9.6"
+        },
+        "compile": {
+          "lib/net47/Uno.UITest.Xamarin.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net47/Uno.UITest.Xamarin.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "Xamarin.UITest/3.0.13": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Xamarin.UITest.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Xamarin.UITest.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/Xamarin.UITest.props": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Microsoft.CodeCoverage/16.1.1": {
+      "sha512": "PyWoU5QNma20JDmee8s9oT5WuG67ZKYj1q2mNsVKnWM15tjW9aa44nwMEOWsMyrd5+Vhx16VgqcnQ9BozWJCJA==",
+      "type": "package",
+      "path": "microsoft.codecoverage/16.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/netstandard1.0/CodeCoverage/CodeCoverage.config",
+        "build/netstandard1.0/CodeCoverage/CodeCoverage.exe",
+        "build/netstandard1.0/CodeCoverage/amd64/covrun64.dll",
+        "build/netstandard1.0/CodeCoverage/amd64/msdia140.dll",
+        "build/netstandard1.0/CodeCoverage/codecoveragemessages.dll",
+        "build/netstandard1.0/CodeCoverage/covrun32.dll",
+        "build/netstandard1.0/CodeCoverage/msdia140.dll",
+        "build/netstandard1.0/Microsoft.CodeCoverage.props",
+        "build/netstandard1.0/Microsoft.CodeCoverage.targets",
+        "build/netstandard1.0/Microsoft.VisualStudio.TraceDataCollector.dll",
+        "build/netstandard1.0/cs/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/de/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/es/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/fr/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/it/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/ja/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/ko/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/pl/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/pt-BR/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/ru/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/tr/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/zh-Hans/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/zh-Hant/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "lib/net45/Microsoft.VisualStudio.CodeCoverage.Shim.dll",
+        "lib/netcoreapp1.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll",
+        "microsoft.codecoverage.16.1.1.nupkg.sha512",
+        "microsoft.codecoverage.nuspec"
+      ]
+    },
+    "Microsoft.NET.Test.Sdk/16.1.1": {
+      "sha512": "HypqmcOK2F/PbXFG02xeCj52Fin/9UF9u9IMH5Ohgn0+iEx7vYjBtXg5SkOf/p84golyLY8cO2S1jchem/1dRQ==",
+      "type": "package",
+      "path": "microsoft.net.test.sdk/16.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net40/Microsoft.NET.Test.Sdk.props",
+        "build/net40/Microsoft.NET.Test.Sdk.targets",
+        "build/netcoreapp1.0/Microsoft.NET.Test.Sdk.Program.cs",
+        "build/netcoreapp1.0/Microsoft.NET.Test.Sdk.Program.fs",
+        "build/netcoreapp1.0/Microsoft.NET.Test.Sdk.Program.vb",
+        "build/netcoreapp1.0/Microsoft.NET.Test.Sdk.props",
+        "build/netcoreapp1.0/Microsoft.NET.Test.Sdk.targets",
+        "build/uap10.0/Microsoft.NET.Test.Sdk.props",
+        "buildMultiTargeting/Microsoft.NET.Test.Sdk.props",
+        "microsoft.net.test.sdk.16.1.1.nupkg.sha512",
+        "microsoft.net.test.sdk.nuspec"
+      ]
+    },
+    "Mono.Cecil/0.9.6": {
+      "sha512": "bwkwiXd6voNmZOX+dsZv83tRmS8TXEYbYwsNvP+Vt0RPBq1c7gj3GNOFKaqEaATnqHKZ+OpG/2VqCV4KqaK2ig==",
+      "type": "package",
+      "path": "mono.cecil/0.9.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/Mono.Cecil.Mdb.dll",
+        "lib/net20/Mono.Cecil.Pdb.dll",
+        "lib/net20/Mono.Cecil.dll",
+        "lib/net35/Mono.Cecil.Mdb.dll",
+        "lib/net35/Mono.Cecil.Pdb.dll",
+        "lib/net35/Mono.Cecil.Rocks.dll",
+        "lib/net35/Mono.Cecil.dll",
+        "lib/net40/Mono.Cecil.Mdb.dll",
+        "lib/net40/Mono.Cecil.Pdb.dll",
+        "lib/net40/Mono.Cecil.Rocks.dll",
+        "lib/net40/Mono.Cecil.dll",
+        "lib/net45/Mono.Cecil.Mdb.dll",
+        "lib/net45/Mono.Cecil.Pdb.dll",
+        "lib/net45/Mono.Cecil.Rocks.dll",
+        "lib/net45/Mono.Cecil.dll",
+        "lib/sl5/Mono.Cecil.Rocks.dll",
+        "lib/sl5/Mono.Cecil.dll",
+        "mono.cecil.0.9.6.nupkg.sha512",
+        "mono.cecil.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/12.0.2": {
+      "sha512": "rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec"
+      ]
+    },
+    "NUnit/3.13.0": {
+      "sha512": "G+BOONgJKtNtprjGQ54l0m+Vq2VFCMh/H6ljuHfqrRlX6YkNy0GjMd5Nn0NpJidGpRd4gAOJsBqNuxr7Kgc/5g==",
+      "type": "package",
+      "path": "nunit/3.13.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGES.md",
+        "LICENSE.txt",
+        "NOTICES.txt",
+        "build/NUnit.props",
+        "icon.png",
+        "lib/net35/nunit.framework.dll",
+        "lib/net35/nunit.framework.xml",
+        "lib/net40/nunit.framework.dll",
+        "lib/net40/nunit.framework.xml",
+        "lib/net45/nunit.framework.dll",
+        "lib/net45/nunit.framework.xml",
+        "lib/netstandard2.0/nunit.framework.dll",
+        "lib/netstandard2.0/nunit.framework.xml",
+        "nunit.3.13.0.nupkg.sha512",
+        "nunit.nuspec"
+      ]
+    },
+    "NUnit3TestAdapter/3.0.10": {
+      "sha512": "A0FJIyBnjCEftjD6QtlZorqiDw+QoXIW7gWP5Fbh+eB+namKUIXe00zd7XJyx7xzGiyQ6rueQxRGWpc0gBuZOg==",
+      "type": "package",
+      "path": "nunit3testadapter/3.0.10",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/Mono.Cecil.dll",
+        "lib/NUnit3.TestAdapter.dll",
+        "lib/ignore.addins",
+        "lib/nunit.engine.api.dll",
+        "lib/nunit.engine.dll",
+        "nunit3testadapter.3.0.10.nupkg.sha512",
+        "nunit3testadapter.nuspec",
+        "tools/install.ps1"
+      ]
+    },
+    "Selenium.WebDriver/3.141.0": {
+      "sha512": "wPqzXO3f79DzqauTZSzLMKiaBCN0Z2Mv7KvWP+hnV6EL88zh/pJJnFtdIR1X5wa3hsTOpF/bBJs45rz7kArsiA==",
+      "type": "package",
+      "path": "selenium.webdriver/3.141.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/WebDriver.dll",
+        "lib/net35/WebDriver.xml",
+        "lib/net40/WebDriver.dll",
+        "lib/net40/WebDriver.xml",
+        "lib/net45/WebDriver.dll",
+        "lib/net45/WebDriver.xml",
+        "lib/netstandard2.0/WebDriver.dll",
+        "lib/netstandard2.0/WebDriver.xml",
+        "selenium.webdriver.3.141.0.nupkg.sha512",
+        "selenium.webdriver.nuspec"
+      ]
+    },
+    "Uno.UITest/1.1.0-dev.11": {
+      "sha512": "koLssOnsMqdrcMgMTmVPtUWTObhDz0tMsTMGLWtyLOITz/D5CfwjVo3RfAUYSCmbdWwmBEE/Q/aDlwrel+H1lQ==",
+      "type": "package",
+      "path": "uno.uitest/1.1.0-dev.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Uno.UITest.dll",
+        "lib/netstandard2.0/Uno.UITest.pdb",
+        "uno.uitest.1.1.0-dev.11.nupkg.sha512",
+        "uno.uitest.nuspec"
+      ]
+    },
+    "Uno.UITest.Helpers/1.1.0-dev.11": {
+      "sha512": "VjyyjADtzOsT7by/NvOVjRvAI0VUkWDo8inhaja3CxJF9038l3OuHcGC6pAnXVdGaBxEHBf1BbEVm4jO4/T5Cg==",
+      "type": "package",
+      "path": "uno.uitest.helpers/1.1.0-dev.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net47/Uno.UITest.Helpers.dll",
+        "lib/net47/Uno.UITest.Helpers.pdb",
+        "uno.uitest.helpers.1.1.0-dev.11.nupkg.sha512",
+        "uno.uitest.helpers.nuspec"
+      ]
+    },
+    "Uno.UITest.Selenium/1.1.0-dev.11": {
+      "sha512": "/6oc6CzNHFTVJO+5hnX2acGSECFY2a7GvKKQXGTcbRnQhd+7c5IwRyn6p7zGrrnPvLbjXxwbt6vFD826Rj5TsQ==",
+      "type": "package",
+      "path": "uno.uitest.selenium/1.1.0-dev.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net47/Uno.UITest.Selenium.dll",
+        "lib/net47/Uno.UITest.Selenium.pdb",
+        "uno.uitest.selenium.1.1.0-dev.11.nupkg.sha512",
+        "uno.uitest.selenium.nuspec"
+      ]
+    },
+    "Uno.UITest.Xamarin/1.1.0-dev.11": {
+      "sha512": "IsYr8pRKcDQE33KzA9QbNJBeYTQg49bIGtKB4hnyZvSZT7+C2el3tY6bCmP16R44oG/hGc5GbYXcs7/N12kxSA==",
+      "type": "package",
+      "path": "uno.uitest.xamarin/1.1.0-dev.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net47/Uno.UITest.Xamarin.dll",
+        "lib/net47/Uno.UITest.Xamarin.pdb",
+        "uno.uitest.xamarin.1.1.0-dev.11.nupkg.sha512",
+        "uno.uitest.xamarin.nuspec"
+      ]
+    },
+    "Xamarin.UITest/3.0.13": {
+      "sha512": "zTdNpJzzmm4VerUeSwk4oeZdIVCDgEHI139mD+/aAEr19VhEiJlJAWOout80YQYqd0lj+P29ZoxM+BSHpOTrag==",
+      "type": "package",
+      "path": "xamarin.uitest/3.0.13",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "ThirdPartyNotices.txt",
+        "build/Xamarin.UITest.props",
+        "lib/net45/Xamarin.UITest.dll",
+        "lib/net45/Xamarin.UITest.xml",
+        "lib/portable-net45+win8+wp8/Xamarin.UITest.dll",
+        "lib/portable-net45+win8+wp8/Xamarin.UITest.xml",
+        "tools/test-cloud.exe",
+        "xamarin.uitest.3.0.13.nupkg.sha512",
+        "xamarin.uitest.nuspec"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETFramework,Version=v4.7": []
+    ".NETFramework,Version=v4.7": [
+      "Microsoft.NET.Test.Sdk >= 16.1.1",
+      "NUnit >= 3.13.0",
+      "NUnit3TestAdapter",
+      "Newtonsoft.Json >= 12.0.2",
+      "Uno.UITest.Helpers >= 1.1.0-dev.11",
+      "Xamarin.UITest >= 3.0.13"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Marius\\.nuget\\packages\\": {},
@@ -53,8 +495,46 @@
     "frameworks": {
       "net47": {
         "targetAlias": "net47",
+        "dependencies": {
+          "Microsoft.NET.Test.Sdk": {
+            "target": "Package",
+            "version": "[16.1.1, )"
+          },
+          "NUnit": {
+            "target": "Package",
+            "version": "[3.13.0, )"
+          },
+          "NUnit3TestAdapter": {
+            "target": "Package",
+            "version": "(, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[12.0.2, )"
+          },
+          "Uno.UITest.Helpers": {
+            "target": "Package",
+            "version": "[1.1.0-dev.11, )"
+          },
+          "Xamarin.UITest": {
+            "target": "Package",
+            "version": "[3.0.13, )"
+          }
+        },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1604",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Project dependency NUnit3TestAdapter does not contain an inclusive lower bound. Include a lower bound in the dependency version to ensure consistent restore results.",
+      "libraryId": "NUnit3TestAdapter",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.7"
+      ]
+    }
+  ]
 }

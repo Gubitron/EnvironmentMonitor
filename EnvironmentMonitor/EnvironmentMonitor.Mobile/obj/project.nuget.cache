@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "cY+tPJ4BjXbcVkZmRiPDnXSoV5P13RceDEFii5iV/ruu/CmWxceQAP9oS9cRjhJrMQuleqDgXnJxPLqB9VLaww==",
+  "dgSpecHash": "Y5d7X6UJQ7z/S1WJndl35xqNV9/x12XObmG1n4vxclVQXxApgKRIXczwEHG7wypgcN2IPkL0efuVKM/OeG32kw==",
   "success": true,
   "projectFilePath": "D:\\Repos\\EnvironmentMonitor\\w\\develop\\EnvironmentMonitor\\EnvironmentMonitor.Mobile\\EnvironmentMonitor.Mobile.csproj",
   "expectedPackageFiles": [
@@ -89,6 +89,14 @@
     "C:\\Users\\Marius\\.nuget\\packages\\xamarin.androidx.viewpager\\1.0.0.10\\xamarin.androidx.viewpager.1.0.0.10.nupkg.sha512",
     "C:\\Users\\Marius\\.nuget\\packages\\xamarin.androidx.viewpager2\\1.0.0.12\\xamarin.androidx.viewpager2.1.0.0.12.nupkg.sha512",
     "C:\\Users\\Marius\\.nuget\\packages\\xamarin.google.android.material\\1.4.0.4\\xamarin.google.android.material.1.4.0.4.nupkg.sha512",
+    "C:\\Users\\Marius\\.nuget\\packages\\microsoft.android.runtime.31.android-x86\\32.0.476\\microsoft.android.runtime.31.android-x86.32.0.476.nupkg.sha512",
+    "C:\\Users\\Marius\\.nuget\\packages\\microsoft.android.runtime.31.android-x64\\32.0.476\\microsoft.android.runtime.31.android-x64.32.0.476.nupkg.sha512",
+    "C:\\Users\\Marius\\.nuget\\packages\\microsoft.android.runtime.31.android-arm64\\32.0.476\\microsoft.android.runtime.31.android-arm64.32.0.476.nupkg.sha512",
+    "C:\\Users\\Marius\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.linux-arm\\6.0.11\\microsoft.aspnetcore.app.runtime.linux-arm.6.0.11.nupkg.sha512",
+    "C:\\Users\\Marius\\.nuget\\packages\\microsoft.android.ref.31\\32.0.476\\microsoft.android.ref.31.32.0.476.nupkg.sha512",
+    "C:\\Users\\Marius\\.nuget\\packages\\microsoft.android.runtime.31.android-arm\\32.0.476\\microsoft.android.runtime.31.android-arm.32.0.476.nupkg.sha512",
+    "C:\\Users\\Marius\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.linux-arm64\\6.0.11\\microsoft.aspnetcore.app.runtime.linux-arm64.6.0.11.nupkg.sha512",
+    "C:\\Users\\Marius\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.linux-x64\\6.0.11\\microsoft.aspnetcore.app.runtime.linux-x64.6.0.11.nupkg.sha512",
     "C:\\Users\\Marius\\.nuget\\packages\\microsoft.ios.ref\\16.0.527\\microsoft.ios.ref.16.0.527.nupkg.sha512",
     "C:\\Users\\Marius\\.nuget\\packages\\microsoft.ios.runtime.iossimulator-x64\\16.0.527\\microsoft.ios.runtime.iossimulator-x64.16.0.527.nupkg.sha512",
     "C:\\Users\\Marius\\.nuget\\packages\\microsoft.maccatalyst.runtime.maccatalyst-x64\\15.4.471\\microsoft.maccatalyst.runtime.maccatalyst-x64.15.4.471.nupkg.sha512",

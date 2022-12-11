@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\EnvironmentMonitor.Application\EnvironmentMonitor.Application.csproj" />
+  </ItemGroup>
+
 </Project>

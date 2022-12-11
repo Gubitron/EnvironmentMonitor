@@ -13,4 +13,14 @@
     <SourceRoot Include="C:\Users\Marius\.nuget\packages\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)xamarin.uitest\3.0.13\build\Xamarin.UITest.props" Condition="Exists('$(NuGetPackageRoot)xamarin.uitest\3.0.13\build\Xamarin.UITest.props')" />
+    <Import Project="$(NuGetPackageRoot)nunit\3.13.0\build\NUnit.props" Condition="Exists('$(NuGetPackageRoot)nunit\3.13.0\build\NUnit.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.codecoverage\16.1.1\build\netstandard1.0\Microsoft.CodeCoverage.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codecoverage\16.1.1\build\netstandard1.0\Microsoft.CodeCoverage.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.net.test.sdk\16.1.1\build\net40\Microsoft.NET.Test.Sdk.props" Condition="Exists('$(NuGetPackageRoot)microsoft.net.test.sdk\16.1.1\build\net40\Microsoft.NET.Test.Sdk.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgXamarin_UITest Condition=" '$(PkgXamarin_UITest)' == '' ">C:\Users\Marius\.nuget\packages\xamarin.uitest\3.0.13</PkgXamarin_UITest>
+    <PkgNUnit3TestAdapter Condition=" '$(PkgNUnit3TestAdapter)' == '' ">C:\Users\Marius\.nuget\packages\nunit3testadapter\3.0.10</PkgNUnit3TestAdapter>
+  </PropertyGroup>
 </Project>

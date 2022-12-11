@@ -1,11 +1,48 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "EnvironmentMonitor.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "EnvironmentMonitor.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/EnvironmentMonitor.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EnvironmentMonitor.Application.dll": {}
+        }
+      },
+      "EnvironmentMonitor.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/EnvironmentMonitor.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EnvironmentMonitor.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "EnvironmentMonitor.Application/1.0.0": {
+      "type": "project",
+      "path": "../EnvironmentMonitor.Application/EnvironmentMonitor.Application.csproj",
+      "msbuildProject": "../EnvironmentMonitor.Application/EnvironmentMonitor.Application.csproj"
+    },
+    "EnvironmentMonitor.Domain/1.0.0": {
+      "type": "project",
+      "path": "../EnvironmentMonitor.Domain/EnvironmentMonitor.Domain.csproj",
+      "msbuildProject": "../EnvironmentMonitor.Domain/EnvironmentMonitor.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "EnvironmentMonitor.Application >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Marius\\.nuget\\packages\\": {},
@@ -41,7 +78,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Repos\\EnvironmentMonitor\\w\\develop\\EnvironmentMonitor.Application\\EnvironmentMonitor.Application.csproj": {
+              "projectPath": "D:\\Repos\\EnvironmentMonitor\\w\\develop\\EnvironmentMonitor.Application\\EnvironmentMonitor.Application.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

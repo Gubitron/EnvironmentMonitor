@@ -1,8 +1,32 @@
 {
   "version": 2,
-  "dgSpecHash": "Vmo7KC19QnOr5s4lQ5DS1v4ScG+jjJ0eDJJLl4BYNwIDZ6DpGetIhFdsmh1a2V1CNjgPBHFEthYT/SWnnvMR/g==",
+  "dgSpecHash": "W44yUzPZptgu20Nx/qarLWCTUyowXVavjYdAOpRsjrk0mXqS2giXtONT+iiZXBt4GmimH5lYlyoNybo8+WJoYQ==",
   "success": true,
   "projectFilePath": "D:\\Repos\\EnvironmentMonitor\\w\\develop\\EnvironmentMonitor.UITests\\EnvironmentMonitor.UITests.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "expectedPackageFiles": [
+    "C:\\Users\\Marius\\.nuget\\packages\\microsoft.codecoverage\\16.1.1\\microsoft.codecoverage.16.1.1.nupkg.sha512",
+    "C:\\Users\\Marius\\.nuget\\packages\\microsoft.net.test.sdk\\16.1.1\\microsoft.net.test.sdk.16.1.1.nupkg.sha512",
+    "C:\\Users\\Marius\\.nuget\\packages\\mono.cecil\\0.9.6\\mono.cecil.0.9.6.nupkg.sha512",
+    "C:\\Users\\Marius\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\Marius\\.nuget\\packages\\nunit\\3.13.0\\nunit.3.13.0.nupkg.sha512",
+    "C:\\Users\\Marius\\.nuget\\packages\\nunit3testadapter\\3.0.10\\nunit3testadapter.3.0.10.nupkg.sha512",
+    "C:\\Users\\Marius\\.nuget\\packages\\selenium.webdriver\\3.141.0\\selenium.webdriver.3.141.0.nupkg.sha512",
+    "C:\\Users\\Marius\\.nuget\\packages\\uno.uitest\\1.1.0-dev.11\\uno.uitest.1.1.0-dev.11.nupkg.sha512",
+    "C:\\Users\\Marius\\.nuget\\packages\\uno.uitest.helpers\\1.1.0-dev.11\\uno.uitest.helpers.1.1.0-dev.11.nupkg.sha512",
+    "C:\\Users\\Marius\\.nuget\\packages\\uno.uitest.selenium\\1.1.0-dev.11\\uno.uitest.selenium.1.1.0-dev.11.nupkg.sha512",
+    "C:\\Users\\Marius\\.nuget\\packages\\uno.uitest.xamarin\\1.1.0-dev.11\\uno.uitest.xamarin.1.1.0-dev.11.nupkg.sha512",
+    "C:\\Users\\Marius\\.nuget\\packages\\xamarin.uitest\\3.0.13\\xamarin.uitest.3.0.13.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1604",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Project dependency NUnit3TestAdapter does not contain an inclusive lower bound. Include a lower bound in the dependency version to ensure consistent restore results.",
+      "libraryId": "NUnit3TestAdapter",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.7"
+      ]
+    }
+  ]
 }
