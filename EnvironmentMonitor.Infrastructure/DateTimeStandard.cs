@@ -2,7 +2,7 @@
 
 namespace EnvironmentMonitor.Infrastructure
 {
-    public class DateTimeService : IDateTime
+    public class DateTimeStandard : IDateTime
     {
         public DateTime Now => DateTime.Now;
     }
